@@ -28,8 +28,10 @@
       <?php
         // see this theme's functions.php
         print do_heading();
-        print naked_nav($post);
       ?>
+      <nav id="access" role="navigation">
+        <?php wp_nav_menu( array('menu' => 'Quem faz' )); ?>
+      </nav>
     </div>
 
     <div id="primaryContent">

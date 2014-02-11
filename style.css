@@ -1,10 +1,12 @@
 @import url("css/font-face.css");
 
-html {
-  overflow-y: scroll;
+html { 
+  background: url('images/background.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
 }
-
-body { }
 
 #canvas {
   width: 768px;
@@ -148,8 +150,7 @@ body { }
 }
 
 #footer {
-  clear: both;
-  font-size: 80%;
+  background-image: url('images/bg_footer.png');
 }
 
 /** normally hidden but will appear when css disabled */
@@ -177,7 +178,94 @@ div.aligncenter {
 .alignright {
    float: right;
 }
+/* =Main Navigation
+-------------------------------------------------------------- */
 
+#access {
+  background: url("images/bg-menu-2col.png") no-repeat;
+  display: block;
+  float: left;
+  min-height: 88px;
+  margin: 32px 0 0 0;
+  padding: 0;
+  width: 708px;
+}
+.attachment #access {
+  background: url("images/bg-menu-1col.png") no-repeat;
+  width: 1000px;
+}
+#access ul {
+  font: 15px Georgia, "Times New Roman", serif;
+  list-style: none;
+  margin: 20px 0 0 15px;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+}
+#access li {
+  float: left;
+  position: relative;
+}
+#access a {
+  color: #261a11;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  padding: 0 13px 5px;
+  text-decoration: none;
+}
+#access ul ul {
+  -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+  display: none;
+  float: left;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  margin-left: 0;
+  z-index: 99998;
+  -webkit-transform: none;
+  -moz-transform: none;
+  min-width: 180px;
+}
+#access ul ul ul {
+  left: 100%;
+  top: 0;
+}
+#access ul ul a {
+  background: #e8e0c8;
+  border: 1px solid #dfce8c;
+  color: #000;
+  line-height: 1;
+  margin: 0;
+  padding: 15px;
+  min-width: 180px;
+  height: auto;
+}
+#access li:hover > a {
+  color: #d8471d;
+  background: url("images/menu-selected.gif") no-repeat;
+}
+#access ul ul li:hover > a {
+  color: #d8471d;
+  background: #e8e0c8;
+  background-position: 0 0;
+}
+#access ul ul a:hover {
+  background: #d4cfc6;
+}
+#access ul li:hover > ul {
+  background: #e2dbd1;
+  display: block;
+}
+#access .current_page_item a {
+  color: #d8471d;
+  background: url("images/menu-selected.gif") no-repeat;
+}
+#access li.current_page_item ul ul li a,
+#access li.current_page_item ul li a  {
+  background: #e8e0c8;
+}
 #site-title0{    font-family: 'daxcompact-blackblack';}
 #site-title1{    font-family: 'daxcompact-blackexpertblack';}
 #site-title2{    font-family: 'daxcompact-boldbold';}

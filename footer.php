@@ -4,10 +4,10 @@
         <?php get_sidebar(); ?>
       </div>
 
-      <div id="footer">
-        <?php wp_footer(); ?>
-      </div>
+    </div>
       
+    <div id="footer" class="clearfix">
+      <?php wp_footer(); ?>
     </div>
 
   </body>
