@@ -1,11 +1,11 @@
 @import url("css/font-face.css");
 
-html { 
-  background: url('images/background.png') no-repeat center center fixed; 
+html {
+  background: url('images/background.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
+  background-size: cover;
 }
 
 #canvas {
@@ -26,34 +26,6 @@ html {
     /** the tagline is a span within the h1 or h4 */
     #header h1 span,
     #header h4 span { }
-
-  /**
-    Nav and Subnav
-    Split these out if you want the two levels to look different
-  */
-  #nav,
-  #subNav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  #subNav {
-    margin-top: 10px;
-  }
-    #nav li,
-    #subNav li {
-      display: inline;
-      padding: 0 10px 0 0;
-    }
-    /* Currently selected page nav item (and parent) if applicable */
-    .current_page_item a,
-    .current_page_parent a {
-      text-decoration: none;
-    }
-      .current_page_item a:hover,
-      .current_page_parent a:hover {
-        text-decoration: underline;
-      }
 
 /**      main content     */
 #primaryContent {
@@ -161,7 +133,7 @@ html {
 }
 
 /**
-  theme requirements as per 
+  theme requirements as per
   http://codex.wordpress.org/CSS
 */
 .aligncenter,
