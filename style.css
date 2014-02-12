@@ -8,84 +8,48 @@ html {
   background-size: cover;
 }
 
-#canvas {
+/*#canvas {
   width: 768px;
   margin: 0 auto;
-}
-
-#header {
-  margin: 0 0 10px 0;
-}
-  /** the heading and tagline are h1 on homepage and h4 on internal */
-  #header h1,
-  #header h4 {
-    font-size: 30px;
-    margin: 0;
-    padding: 10px 0 10px 0;
-  }
-    /** the tagline is a span within the h1 or h4 */
-    #header h1 span,
-    #header h4 span { }
+}*/
 
 /**      main content     */
 #primaryContent {
-  width: 540px;
   float: left;
   padding: 0 20px 0 0;
-  margin: 0;
+  background: url('images/bg-content.png') no-repeat center center fixed;
 }
-  #primaryContent h1 {
-    padding: 0;
-    margin: 10px 0 0 0;
+ol#posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  li.postWrapper,
+  div.postWrapper { }
+
+    .postWrapper img { }
+
+    div.post { }
+
+    p.postMeta { }
+
+#pagination {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+  #pagination li {
+    display: inlne;
   }
-
-  #primaryContent h2 {
-    padding: 0;
-    margin: 10px 0 0 0;
+  #pagination .previous {
+    text-align: left;
+    float: left;
   }
-
-  /* titles are h2 on homepage and h1 for internal */
-  #primaryContent h1.postTitle,
-  #primaryContent h2.postTitle {
-    font-size: 22px;
+  #pagination .future {
+    text-align: right;
+    float: right;
   }
-
-  #primaryContent h3 {
-    padding: 0;
-    margin: 10px 0 0 0;
-  }
-
-  ol#posts {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-    li.postWrapper,
-    div.postWrapper { }
-
-      .postWrapper img { }
-
-      div.post { }
-
-      p.postMeta { }
-
-  #pagination {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-  }
-    #pagination li {
-      display: inlne;
-    }
-    #pagination .previous {
-      text-align: left;
-      float: left;
-    }
-    #pagination .future {
-      text-align: right;
-      float: right;
-    }
 
 /**       sidebar          */
 #secondaryContent {
@@ -150,40 +114,48 @@ div.aligncenter {
 .alignright {
    float: right;
 }
+
+#logo{
+  background: url("images/logo.png") no-repeat;
+  float: left;
+  height: 305px;
+  width: 600px;
+  display: block;
+  margin-left: 67px;
+}
 /* =Main Navigation
 -------------------------------------------------------------- */
 
 #access {
-  background: url("images/bg-menu-2col.png") no-repeat;
   display: block;
-  float: left;
+  float: right;
   min-height: 88px;
-  margin: 32px 0 0 0;
+  margin: 160px 99px 0 0;
   padding: 0;
-  width: 708px;
 }
 .attachment #access {
   background: url("images/bg-menu-1col.png") no-repeat;
   width: 1000px;
 }
 #access ul {
-  font: 15px Georgia, "Times New Roman", serif;
+  font: 20px 'daxcompact-lightlight', "Times New Roman", serif;
   list-style: none;
   margin: 20px 0 0 15px;
-  -webkit-transform: rotate(1deg);
-  -moz-transform: rotate(1deg);
 }
 #access li {
-  float: left;
+  float: right;
   position: relative;
+  padding-right: 35px;
+  background: url("images/hashtag_menu.png") no-repeat;
 }
 #access a {
-  color: #261a11;
+  color: #6e4b3a;
   display: block;
   font-weight: bold;
   line-height: 3;
   padding: 0 13px 5px;
   text-decoration: none;
+  margin-top: -16px;
 }
 #access ul ul {
   -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -215,8 +187,8 @@ div.aligncenter {
   height: auto;
 }
 #access li:hover > a {
-  color: #d8471d;
-  background: url("images/menu-selected.gif") no-repeat;
+  background: url("images/menu-selected.png") no-repeat;
+  background-position: 0 .6em;
 }
 #access ul ul li:hover > a {
   color: #d8471d;
@@ -232,7 +204,6 @@ div.aligncenter {
 }
 #access .current_page_item a {
   color: #d8471d;
-  background: url("images/menu-selected.gif") no-repeat;
 }
 #access li.current_page_item ul ul li a,
 #access li.current_page_item ul li a  {
