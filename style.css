@@ -28,10 +28,9 @@ body {
   margin-left: 150px;
   margin-bottom: 100px;
   width: 1050px;
-  height:auto;
-  min-height:600px;
-  height:auto !important;        /* for IE as it does not support min-height */
-  height:30px;                   /* for IE as it does not support min-height */
+  min-height: 700px;
+  height: auto !important;        /* for IE as it does not support min-height */
+  height: 700px;                   /* for IE as it does not support min-height */
 }
 #footer {
   position: relative;
@@ -45,6 +44,7 @@ body {
   float: left;
   line-height: 20px;
   display: block;
+  margin-left: 100px;
 }
 #links{
   width: 600px;
@@ -73,7 +73,8 @@ body {
 #sidebar {
   /*width: 200px;
   float: right;*/
-  padding-right: 211px;
+  float: left;
+  width: 300px;
 }
 #sidebar h3 {
   padding: 0;
