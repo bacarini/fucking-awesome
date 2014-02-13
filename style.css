@@ -19,8 +19,8 @@ body {
   display: block;
   margin-left: 67px;
 }
-#header {
-  padding:10px;
+#header{
+  padding: 10px;
 }
 #main {
   background: url('images/bg_content.png') ;
@@ -29,23 +29,22 @@ body {
   margin-bottom: 100px;
   width: 1050px;
   height:auto;
-min-height:600px;
-height:auto !important;        /* for IE as it does not support min-height */
-height:30px;                   /* for IE as it does not support min-height */
+  min-height:600px;
+  height:auto !important;        /* for IE as it does not support min-height */
+  height:30px;                   /* for IE as it does not support min-height */
 }
-#footer {position: relative;
+#footer {
+  position: relative;
   background: url('images/bg_footer.png');
-  height: 150px;
+  height: auto;
   clear:both;
 } 
 #content{
   text-align: left;
   width: 600px;
-  /*margin-left: 280px;*/
   float: left;
   line-height: 20px;
   display: block;
-
 }
 #links{
   width: 600px;
@@ -80,8 +79,7 @@ height:30px;                   /* for IE as it does not support min-height */
   padding: 0;
   margin: 10px 0 0 0;
 }
-/**      main content     */
-
+#contact-form{}
 
 ol#posts {
   list-style: none;

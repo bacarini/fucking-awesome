@@ -10,7 +10,12 @@
   			<a href="#" id="new_posts">Posts + novos</a>
   		</div>
 
-  		<div id="footer"></div>
+  		<div id="footer">
+  		  <?php wp_footer(); ?>
+  		  <?php
+  			echo do_shortcode( '[contact-form-7 id="40" title="contact-footer"]' ); 
+  		   ?>
+  		</div>
   	</div>
   </body>
 </html>
