@@ -1,24 +1,88 @@
 @import url("css/font-face.css");
 
-html {
-  background: url('images/background.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
 }
-
-/*#canvas {
-  width: 768px;
-  margin: 0 auto;
-}*/
-
-/**      main content     */
-#primaryContent {
+#container {
+   background: url('images/background.png');
+   min-height:100%;
+   position:relative;
+}
+#logo{
+  background: url("images/logo.png") no-repeat;
   float: left;
-  padding: 0 20px 0 0;
-  background: url('images/bg-content.png') no-repeat center center fixed;
+  height: 305px;
+  width: 600px;
+  display: block;
+  margin-left: 67px;
 }
+#header {
+  padding:10px;
+}
+#main {
+  background: url('images/bg_content.png') ;
+  margin-top: 202px;
+  margin-left: 150px;
+  margin-bottom: 100px;
+  width: 1050px;
+  height:auto;
+min-height:600px;
+height:auto !important;        /* for IE as it does not support min-height */
+height:30px;                   /* for IE as it does not support min-height */
+}
+#footer {position: relative;
+  background: url('images/bg_footer.png');
+  height: 150px;
+  clear:both;
+} 
+#content{
+  text-align: left;
+  width: 600px;
+  /*margin-left: 280px;*/
+  float: left;
+  line-height: 20px;
+  display: block;
+
+}
+#links{
+  width: 600px;
+  margin: 0 auto;
+}
+#new_posts{
+  background: url('images/new_posts.png') no-repeat; 
+  font-family: 'halohandletterregular';
+  text-decoration: none;
+  color: #6e4b3a;
+  font-size: 40px;
+  line-height: 1.7;
+  float: right;
+  padding: 0 41px 0;
+}
+#old_posts{
+  float: left;
+  background: url('images/old_posts.png') no-repeat; 
+  font-family: 'halohandletterregular';
+  text-decoration: none;
+  color: #6e4b3a;
+  font-size: 40px;
+  line-height: 1.7;
+  padding: 0 41px 0;
+}
+#sidebar {
+  /*width: 200px;
+  float: right;*/
+  padding-right: 211px;
+}
+#sidebar h3 {
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+/**      main content     */
+
+
 ol#posts {
   list-style: none;
   margin: 0;
@@ -52,14 +116,6 @@ ol#posts {
   }
 
 /**       sidebar          */
-#secondaryContent {
-  width: 200px;
-  float: left;
-}
-  #secondaryContent h3 {
-    padding: 0;
-    margin: 10px 0 0 0;
-  }
 
   /**
     Remove bullets from the first level sidebar UL and give each item some bottom margin.
@@ -85,9 +141,6 @@ ol#posts {
   width: 500px;
 }
 
-#footer {
-  background-image: url('images/bg_footer.png');
-}
 
 /** normally hidden but will appear when css disabled */
 .skip,
@@ -115,14 +168,6 @@ div.aligncenter {
    float: right;
 }
 
-#logo{
-  background: url("images/logo.png") no-repeat;
-  float: left;
-  height: 305px;
-  width: 600px;
-  display: block;
-  margin-left: 67px;
-}
 /* =Main Navigation
 -------------------------------------------------------------- */
 
