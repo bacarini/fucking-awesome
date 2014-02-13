@@ -1,40 +1,40 @@
 @import url("css/font-face.css");
 
-html,
-body {
+* {
    margin:0;
    padding:0;
-   height:100%;
 }
-#container {
-   background: url('images/background.png');
-   min-height:100%;
-   position:relative;
+body {
+   background: url('images/bg-site.png');
+}
+.container{
+  margin: 0 auto;
+  width: 998px;
+}
+#header{
+  height: 196px;
+  position: relative;
 }
 #logo{
   background: url("images/logo.png") no-repeat;
-  float: left;
   height: 305px;
   width: 600px;
-  display: block;
-  margin-left: 67px;
+  position: absolute;
+  top: 0;
+  left: -70px;
+
 }
-#header{
-  padding: 10px;
-}
+
 #main {
-  background: url('images/bg_content.png') ;
-  margin-top: 202px;
-  margin-left: 150px;
-  margin-bottom: 100px;
-  width: 1050px;
-  min-height: 700px;
-  height: auto !important;        /* for IE as it does not support min-height */
-  height: 700px;                   /* for IE as it does not support min-height */
+  background-color: rgba(254,254,254,0.5) ;
+  overflow: hidden;
+  padding-top: 100px;
+  box-shadow: 3px 3px 3px rgba(172,170,163,1);
+  padding-bottom: 25px;
 }
 #footer {
   position: relative;
-  background: url('images/bg_footer.png');
+  background-color: rgba(243,207,120,0.3);
   height: auto;
   clear:both;
 } 
@@ -44,14 +44,13 @@ body {
   float: left;
   line-height: 20px;
   display: block;
-  margin-left: 100px;
+  margin: 0 20px;
 }
-#links{
-  width: 600px;
-  margin: 0 auto;
+#links.container{
+  width: 958px;
 }
 #new_posts{
-  background: url('images/new_posts.png') no-repeat; 
+  background: url('images/new_posts.png') no-repeat right center; 
   font-family: 'halohandletterregular';
   text-decoration: none;
   color: #6e4b3a;
@@ -81,7 +80,7 @@ body {
   margin: 10px 0 0 0;
 }
 #contact-form{}
-
+.postWrapper{ margin-left: 75px;}
 ol#posts {
   list-style: none;
   margin: 0;
@@ -147,11 +146,8 @@ div.aligncenter {
 /* =Main Navigation
 -------------------------------------------------------------- */
 #access {
-  display: block;
   float: right;
-  min-height: 88px;
-  margin: 160px 99px 0 0;
-  padding: 0;
+  margin: 155px 0 0;
 }
 .attachment #access {
   background: url("images/bg-menu-1col.png") no-repeat;
@@ -163,18 +159,27 @@ div.aligncenter {
   margin: 20px 0 0 15px;
 }
 #access li {
-  float: right;
+  display: inline-block;
+  margin-left: 10px;
   position: relative;
-  padding-right: 35px;
-  background: url("images/hashtag_menu.png") no-repeat;
 }
 #access a {
   color: #6e4b3a;
   display: block;
-  line-height: 3;
-  padding: 0 13px 5px;
+  padding: 0 0 5px 0;
   text-decoration: none;
-  margin-top: -16px;
+  text-align: center;
+  min-width: 100px;
+}
+#access a:before{
+  content: "" ;
+  background: url("images/hashtag_menu.png") no-repeat;
+  display: inline-block;
+  height: 25px;
+  width: 16px;
+}
+#access ul ul a:before{
+  display: none;
 }
 #access ul ul {
   display: none;
@@ -203,8 +208,7 @@ div.aligncenter {
   height: auto;
 }
 #access li:hover > a {
-  background: url("images/menu-selected.png") no-repeat;
-  background-position: 0 .6em;
+  background: url("images/menu-selected.png") no-repeat center bottom;
 }
 #access ul ul li:hover > a {
   color: #d8471d;

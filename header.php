@@ -22,15 +22,14 @@
 </head>
 
 <body>
-    <div id="container">
 
-      <div id="header">
+      <header id="header" class="container">
         <h1 id="logo"></h1>
         <nav id="access" role="navigation">
           <?php wp_nav_menu( array('menu' => 'Quem faz' )); ?>
         </nav>
-      </div>
+      </header>
 
-      <div id="main">
+      <div id="main" class="container">
         
         <div id="content">
