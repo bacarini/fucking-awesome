@@ -6,6 +6,7 @@
 }
 body {
    background: url('images/bg-site.png');
+   font-family: "century gothic",verdana,arial,helvetica,sans-serif;
 }
 .container{
   margin: 0 auto;
@@ -22,7 +23,6 @@ body {
   position: absolute;
   top: 0;
   left: -70px;
-
 }
 
 #main {
@@ -40,40 +40,38 @@ body {
 } 
 #content{
   text-align: left;
-  width: 600px;
+  width: 661px;
   float: left;
   line-height: 20px;
   display: block;
-  margin: 0 20px;
+  margin: 0 39px 0 20px;
 }
-#links.container{
-  width: 958px;
+#links{
+  width: 661px;
+}
+a{
+  text-decoration:none;
 }
 #new_posts{
   background: url('images/new_posts.png') no-repeat right center; 
+  float: right;
+}
+div#links a{
+  color: #6e4b3a !important;
   font-family: 'halohandletterregular';
-  text-decoration: none;
-  color: #6e4b3a;
   font-size: 40px;
   line-height: 1.7;
-  float: right;
   padding: 0 41px 0;
 }
 #old_posts{
   float: left;
   background: url('images/old_posts.png') no-repeat; 
-  font-family: 'halohandletterregular';
-  text-decoration: none;
-  color: #6e4b3a;
-  font-size: 40px;
-  line-height: 1.7;
-  padding: 0 41px 0;
 }
 #sidebar {
   /*width: 200px;
   float: right;*/
   float: left;
-  width: 300px;
+  width: 255px;
 }
 #sidebar h3 {
   padding: 0;
@@ -92,7 +90,9 @@ div.postWrapper { }
 
 .postWrapper img { }
 
-div.post { }
+div.post {
+  margin-top: 25px;
+}
 
 p.postMeta { }
 
@@ -239,4 +239,63 @@ div.aligncenter {
 #site-title9{    font-family: 'daxcompact-mediumexpertmedium';}
 #site-title10{    font-family: 'daxcompact-regularregular';}
 #site-title11{    font-family: 'daxcompact-regularexpertRg';}
-#site-title12{    font-family: 'halohandletterregular';}
+.postTitle{
+  padding-bottom: 18px;
+}
+.postTitle a{    
+  font-family: 'halohandletterregular';
+  font-size: 250%;
+  font-weight:normal;
+  color: #00595a;
+}
+.qtd_comments{
+  background: url("images/balaozinho.png") no-repeat;
+  float: right;
+  margin-top: -20px;
+  color: #00595a;
+  font-family: 'daxcompact-extraboldextrabold';
+  font-size: 15px;
+}
+hr{
+  margin-bottom: 35px;
+  color: #eae2cc;
+  background-color: #eae2cc;
+  height: 2px;
+  border: 0;
+}
+.titleMeta{
+  color: #f4a481;
+}
+.author{ 
+  color: #f4a481;}
+.titleMeta a{
+  color: #f4a481;
+}
+.descMeta a{
+  color: #703f5a;
+}
+.post_date{
+  background: url("images/post_date.png") no-repeat;
+  height: 65px;
+  width: 77px;
+  float: left;
+  margin: -20px 0 0 -10px;
+  padding-top: 14px;
+  text-align: center;
+}
+.year{
+  font-family: 'daxcompact-lightlight';
+  color: #dccda7;
+  display: block;
+  /*padding-left: 21px;*/
+}
+.month{
+  font-family: 'daxcompact-lightlight';
+  /*padding-left: 18px;*/
+  text-transform: uppercase;
+  color: #00595a;
+}
+.day{
+  color: #00595a;
+  font-family: 'daxcompact-extraboldextrabold';
+}

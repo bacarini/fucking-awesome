@@ -10,18 +10,47 @@
 
     while (have_posts()) : the_post(); ?>
 
+    <div class="post_date">
+      <span class="month">
+        <?php the_time('M') ?>
+      </span>
+      <span class="day">
+        <?php the_time('j') ?>
+      </span>
+      <span class="year">
+        <?php the_time('Y') ?>
+      </span>
+    </div>
+
     <li class="postWrapper" id="post-<?php the_ID(); ?>">
 
-      <h2 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-      <small><?php the_date(); ?> by <?php the_author(); ?></small>
+      <span class="qtd_comments"><?php echo get_comments_number() ?></span>
+      <h2 class="postTitle">
+        <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+      </h2>
+      <small> Posted by <a href="/sobre" class="author"><?php the_author(); ?></a></small>
 
       <div class="post"><?php the_content(__('(more...)')); ?></div>
-      <p class="postMeta">Category: <?php the_category(', ') . " " . the_tags(__('Tags: '), ', ', ' | ') . comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')) . edit_post_link(__('Edit'), ' | '); ?></p>
+      
+      <small>
+        <p>
+          <span class="titleMeta">Categoria:</span>
+          <span class="descMeta"><?php the_category(', '); ?></span>
+          <span class="titleMeta">Tags:</span>
+          <span class="descMeta"><?php the_tags(__('Tags: '), ', ', ' | '); ?></span>
+        </p>
+        <p>
+          <span class="titleMeta">
+            <?php comments_popup_link(__('Comentário (0)'), __('Comentário (1)'), __('Comentários (%)'))?>
+          </span>
+          <?php edit_post_link(__('Edit'), ' | ');?>
+        </p>
+      </small>
 
-      <hr class="noCss" />
+      <hr/>
     </li>
 
-    <?php comments_template(); // Get wp-comments.php template ?>
+    <?php comments_template();?>
 
     <?php endwhile; ?>
 
@@ -35,16 +64,6 @@
 
   endif;
   ?>
-
-  <?php if (will_paginate()): ?>
-  
-    <ul id="pagination">
-      <li class="previous"><?php posts_nav_link('','','&laquo; Previous Entries') ?></li>
-      <li class="future"><?php posts_nav_link('','Next Entries &raquo;','') ?></li>
-    </ul>
-    
-  <?php endif; ?>
-
 
   <?php
   get_footer();
