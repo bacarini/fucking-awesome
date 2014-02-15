@@ -1,13 +1,8 @@
-<?php
+<?php get_header(); ?>
 
-  /**
-  *@desc A page. See single.php is for a blog post layout.
-  */
+<?php if (have_posts()) : ?>
 
-  get_header();
-
-  if (have_posts()) : while (have_posts()) : the_post();
-  ?>
+  <?php while (have_posts()) : the_post(); ?>
 
     <div class="postWrapper" id="post-<?php the_ID(); ?>">
 
@@ -19,15 +14,12 @@
       <p class="postMeta"><?php edit_post_link(__('Edit'), ''); ?></p>
     </div>
 
-  <?php
-  comments_template();
+    <?php comments_template(); ?>
 
-  endwhile; else: ?>
+  <?php endwhile; else: ?>
 
-    <p>Sorry, no pages matched your criteria.</p>
+  <p>Sorry, no pages matched your criteria.</p>
 
-<?php
-  endif;
+<?php endif; ?>
 
-  get_footer();
-?>
+<?php get_footer(); ?>
