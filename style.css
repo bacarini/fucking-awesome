@@ -31,6 +31,7 @@ body {
   padding-top: 100px;
   box-shadow: 3px 3px 3px rgba(172,170,163,1);
   padding-bottom: 25px;
+  margin-bottom: 100px;
 }
 #footer {
   position: relative;
@@ -79,7 +80,7 @@ div#links a{
 }
 
 .postWrapper{ margin-left: 75px;}
-ol#posts {
+ol{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -298,4 +299,56 @@ hr{
 .day{
   color: #00595a;
   font-family: 'daxcompact-extraboldextrabold';
+}
+#comments{
+  font-family: 'daxcompact-boldbold';
+  padding-bottom: 5px;
+  color: #00595a;
+}
+.avatar{
+  width: 76px;
+  display: inline-block;
+}
+.comment_text{
+  width: 585px;
+  margin-left: 96px;
+  float: right;
+}
+#submit{
+  font-family: 'halohandletterregular';
+  font-size: 300%;
+  border: 0;
+  background: none;
+  color: #00595a; 
+  margin-left: 280px;
+  width: 100px;
+  background: url("images/menu-selected.png") no-repeat center bottom;
+  line-height: 0.7em;
+}
+#submit:hover{
+  color: #d8471d;
+}
+form#commentform label small{
+  color: #f4a481;
+}
+form#commentform textarea{
+  border: 2px solid #00595a;
+  background-color: #f0eade;
+  height: 120px;
+  width: 320px;
+  margin-top: 6px;
+}
+form#commentform p input[type='text']{
+  border: 2px solid #00595a;
+  background-color: #f0eade;
+  height: 23px;
+  width: 280px;
+}
+#postcomment{
+  font-family: 'daxcompact-extraboldextrabold';
+  color: #6e3541;
+}
+.field_comment{
+  float: right;
+  margin-top: -16px;
 }

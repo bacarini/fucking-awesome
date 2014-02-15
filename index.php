@@ -50,6 +50,11 @@
 
     <?php endwhile; ?>
 
+    <div id="links" class="container">
+        <div id="old_posts"><?php next_posts_link('Posts + velhos','') ?></div>
+        <div id="new_posts"><?php previous_posts_link('Posts + novos') ?></div>
+    </div>
+
   </ol>
 
 <?php else: ?>
