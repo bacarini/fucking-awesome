@@ -20,7 +20,9 @@
 
       <li class="postWrapper" id="post-<?php the_ID(); ?>">
 
-        <span class="qtd_comments"><?php echo get_comments_number() ?></span>
+        <div class="icon_comments">
+          <span class="qtd_comments"><?php echo get_comments_number() ?></span>
+        </div>
         <h2 class="postTitle">
           <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
         </h2>

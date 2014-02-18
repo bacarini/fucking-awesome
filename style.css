@@ -317,10 +317,10 @@ hr{
   float: left;
 }
 .comment_text{
-  width: 558px;
+  width: 561px;
   border: 2px solid #00595a;
   background-color: #f0eade;
-  height: 146px;
+  min-height: 146px;
   margin: 0 0 10px 96px;
 }
 #submit{
