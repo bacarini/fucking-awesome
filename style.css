@@ -250,12 +250,20 @@ div.aligncenter {
   color: #00595a;
 }
 .qtd_comments{
-  background: url("images/balaozinho.png") no-repeat;
+  display: block;
+  text-align: center;
+  margin-top: 2px;
+}
+.icon_comments{
+  background: url("images/balaozinho.png") no-repeat top center;
+  background-position: -10px -27px;
   float: right;
   margin-top: -20px;
   color: #00595a;
   font-family: 'daxcompact-extraboldextrabold';
   font-size: 15px;
+  width: 50px;
+  height: 64px;
 }
 hr{
   margin-bottom: 35px;
@@ -305,14 +313,15 @@ hr{
   padding-bottom: 5px;
   color: #00595a;
 }
-.avatar{
-  width: 76px;
-  display: inline-block;
+.comment_image{
+  float: left;
 }
 .comment_text{
-  width: 585px;
-  margin-left: 96px;
-  float: right;
+  width: 558px;
+  border: 2px solid #00595a;
+  background-color: #f0eade;
+  height: 146px;
+  margin: 0 0 10px 96px;
 }
 #submit{
   font-family: 'halohandletterregular';
@@ -336,7 +345,8 @@ form#commentform textarea{
   background-color: #f0eade;
   height: 120px;
   width: 320px;
-  margin-top: 6px;
+  margin-top: 22px;
+  float: left;
 }
 form#commentform p input[type='text']{
   border: 2px solid #00595a;
@@ -350,5 +360,7 @@ form#commentform p input[type='text']{
 }
 .field_comment{
   float: right;
-  margin-top: -16px;
+}
+.comment{
+  overflow: hidden;
 }

@@ -8,17 +8,19 @@
 	<ol id="commentlist">
 
 		<?php foreach ($comments as $comment) : ?>
-			<li id="comment-<?php comment_ID() ?>">
-				<div class="comment_text"><?php comment_text() ?></div>
-				<div class="avatar"><?php echo get_avatar( $comment, 76 ); ?></div>  
-				<small>
-					<p class="titleMeta"><?php comment_author_link() ?></p>
-					<p><?php echo strtoupper(get_comment_date('j M, Y')) ?> </p>
-					<p>at <?php echo strtoupper(get_comment_time()) ?></p>
-					<?php edit_comment_link(__("Edit")); ?>
-				</small>
-			</li>
-			<hr/>
+			<li class="comment">
+        <div class="comment_image">
+          <?php echo get_avatar( $comment, 76 ); ?>  
+          <small>
+          <p class="titleMeta"><?php comment_author_link() ?></p>
+          <p><?php echo strtoupper(get_comment_date('j M, Y')) ?> </p>
+          <p>at <?php echo strtoupper(get_comment_time()) ?></p>
+          <?php edit_comment_link(__("Edit")); ?>
+        </small>
+        </div>
+        <div class="comment_text"><?php comment_text() ?></div>
+      </li>
+      <hr/>
 		<?php endforeach; ?>
 	</ol>
 
