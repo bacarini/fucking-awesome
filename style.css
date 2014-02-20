@@ -36,7 +36,7 @@ body {
 #footer {
   position: relative;
   background-color: rgba(243,207,120,0.3);
-  height: auto;
+  height: 250px;
   clear:both;
 } 
 #content{
