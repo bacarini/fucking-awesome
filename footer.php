@@ -1,12 +1,9 @@
-	      	</div>
+	      	</article>
 
-	      	<aside id="sidebar">
-	        	<?php get_sidebar(); ?>
-	      	</aside>
- 		</div>
+          <?php get_sidebar(); ?>
+ 		</main>
 
-		<footer id="footer">
-		</footer>
+		<footer></footer>
 
   </body>
 </html>

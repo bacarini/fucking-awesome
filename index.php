@@ -29,7 +29,7 @@
         <small> Posted by <a href="/sobre" class="author"><?php the_author(); ?></a></small>
 
         <div class="post"><?php the_content(__('(more...)')); ?></div>
-        
+
         <small>
           <p>
             <span class="titleMeta">Categoria:</span>

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-  
+
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post();?>
-      
+
       <div class="post_date">
         <span class="month">
           <?php the_time('M') ?>
@@ -16,7 +16,7 @@
       </div>
 
       <div class="postWrapper" id="post-<?php the_ID(); ?>">
-        
+
         <div class="icon_comments">
           <span class="qtd_comments"><?php echo get_comments_number() ?></span>
         </div>

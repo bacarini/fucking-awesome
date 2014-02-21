@@ -8,13 +8,38 @@ body {
    background: url('images/bg-site.png');
    font-family: "century gothic",verdana,arial,helvetica,sans-serif;
 }
+header{
+  height: 196px;
+  position: relative;
+}
+footer {
+  position: relative;
+  background-color: rgba(243,207,120,0.3);
+  height: 250px;
+  clear:both;
+}
+a{
+  text-decoration:none;
+}
+article{
+  text-align: left;
+  width: 661px;
+  float: left;
+  line-height: 20px;
+  display: block;
+  margin: 0 39px 0 20px;
+}
+aside {
+  float: left;
+  width: 255px;
+}
+aside h3 {
+  padding: 0;
+  margin: 10px 0 0 0;
+}
 .container{
   margin: 0 auto;
   width: 998px;
-}
-#header{
-  height: 196px;
-  position: relative;
 }
 #logo{
   background: url("images/logo.png") no-repeat;
@@ -33,28 +58,11 @@ body {
   padding-bottom: 25px;
   margin-bottom: 100px;
 }
-#footer {
-  position: relative;
-  background-color: rgba(243,207,120,0.3);
-  height: 250px;
-  clear:both;
-} 
-#content{
-  text-align: left;
-  width: 661px;
-  float: left;
-  line-height: 20px;
-  display: block;
-  margin: 0 39px 0 20px;
-}
 #links{
   width: 661px;
 }
-a{
-  text-decoration:none;
-}
 #new_posts{
-  background: url('images/new_posts.png') no-repeat right center; 
+  background: url('images/new_posts.png') no-repeat right center;
   float: right;
 }
 div#links a{
@@ -66,17 +74,7 @@ div#links a{
 }
 #old_posts{
   float: left;
-  background: url('images/old_posts.png') no-repeat; 
-}
-#sidebar {
-  /*width: 200px;
-  float: right;*/
-  float: left;
-  width: 255px;
-}
-#sidebar h3 {
-  padding: 0;
-  margin: 10px 0 0 0;
+  background: url('images/old_posts.png') no-repeat;
 }
 
 .postWrapper{ margin-left: 75px;}
@@ -127,25 +125,6 @@ p.postMeta { }
 #comment {
   width: 500px;
 }
-.skip,
-.noCss {
-  position: absolute;
-  left: -9999px;
-}
-.aligncenter,
-div.aligncenter {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
-.alignleft {
-   float: left;
-}
-.alignright {
-   float: right;
-}
-/* =Main Navigation
--------------------------------------------------------------- */
 #access {
   float: right;
   margin: 155px 0 0;
@@ -228,22 +207,10 @@ div.aligncenter {
 #access li.current_page_item ul li a  {
   background: #e8e0c8;
 }
-#site-title0{    font-family: 'daxcompact-blackblack';}
-#site-title1{    font-family: 'daxcompact-blackexpertblack';}
-#site-title2{    font-family: 'daxcompact-boldbold';}
-#site-title3{    font-family: 'daxcompact-boldexpertbold';}
-#site-title4{    font-family: 'daxcompact-extraboldextrabold';}
-#site-title5{    font-family: 'daxcompact-extraboldexpertBd';}
-#site-title6{    font-family: 'daxcompact-lightlight';}
-#site-title7{    font-family: 'daxcompact-lightexpertlight';}
-#site-title8{    font-family: 'daxcompact-mediummedium';}
-#site-title9{    font-family: 'daxcompact-mediumexpertmedium';}
-#site-title10{    font-family: 'daxcompact-regularregular';}
-#site-title11{    font-family: 'daxcompact-regularexpertRg';}
 .postTitle{
   padding-bottom: 18px;
 }
-.postTitle a{    
+.postTitle a{
   font-family: 'halohandletterregular';
   font-size: 250%;
   font-weight:normal;
@@ -275,7 +242,7 @@ hr{
 .titleMeta{
   color: #f4a481;
 }
-.author{ 
+.author{
   color: #f4a481;}
 .titleMeta a{
   color: #f4a481;
@@ -328,7 +295,7 @@ hr{
   font-size: 300%;
   border: 0;
   background: none;
-  color: #00595a; 
+  color: #00595a;
   margin-left: 280px;
   width: 100px;
   background: url("images/menu-selected.png") no-repeat center bottom;

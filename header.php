@@ -23,13 +23,12 @@
 
 <body>
 
-      <header id="header" class="container">
+      <header class="container">
         <h1 id="logo"></h1>
         <nav id="access" role="navigation">
           <?php wp_nav_menu( array('menu' => 'Quem faz' )); ?>
         </nav>
       </header>
 
-      <div id="main" class="container">
-        
-        <div id="content">
+      <main id="main" class="container">
+        <article>

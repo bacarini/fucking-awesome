@@ -10,7 +10,7 @@
 		<?php foreach ($comments as $comment) : ?>
 			<li class="comment">
         <div class="comment_image">
-          <?php echo get_avatar( $comment, 76 ); ?>  
+          <?php echo get_avatar( $comment, 76 ); ?>
           <small>
           <p class="titleMeta"><?php comment_author_link() ?></p>
           <p><?php echo strtoupper(get_comment_date('j M, Y')) ?> </p>
@@ -39,7 +39,7 @@
 			<?php if ( $user_ID ) : ?>
 
 				<p><?php printf(__('Logged in as %s.'), '<a href="'.get_option('siteurl').'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account') ?>"><?php _e('Logout &raquo;'); ?></a></p>
-		
+
 				<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="1"></textarea>
 			<?php else : ?>
 				<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="1"></textarea>
@@ -52,9 +52,6 @@
 				<p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="4" /></p>
 				</div>
 			<?php endif; ?>
-
-			<!--<p><small><strong>XHTML:</strong> <?php printf(__('You can use these tags: %s'), allowed_tags()); ?></small></p>-->
-
 
 			<p>
 				<input name="submit" type="submit" id="submit" tabindex="5" value="enviar"/>
