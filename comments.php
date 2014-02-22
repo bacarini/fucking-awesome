@@ -13,7 +13,7 @@
           <?php echo get_avatar( $comment, 76 ); ?>
           <small>
           <p class="titleMeta"><?php comment_author_link() ?></p>
-          <p><?php echo strtoupper(get_comment_date('j M, Y')) ?> </p>
+          <p><?php echo get_comment_date('j.m.Y') ?> </p>
           <p>at <?php echo strtoupper(get_comment_time()) ?></p>
           <?php edit_comment_link(__("Edit")); ?>
         </small>
@@ -23,9 +23,6 @@
       <hr/>
 		<?php endforeach; ?>
 	</ol>
-
-<?php else : ?>
-	<p><?php _e('No comments yet.'); ?></p>
 <?php endif; ?>
 
 <?php if ( comments_open() ) : ?>
@@ -38,7 +35,7 @@
 		<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 			<?php if ( $user_ID ) : ?>
 
-				<p><?php printf(__('Logged in as %s.'), '<a href="'.get_option('siteurl').'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account') ?>"><?php _e('Logout &raquo;'); ?></a></p>
+				<p><?php printf(__('Logado como %s.'), '<a href="'.get_option('siteurl').'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account') ?>"><?php _e('Sair'); ?></a></p>
 
 				<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="1"></textarea>
 			<?php else : ?>
@@ -61,8 +58,8 @@
 			<?php do_action('comment_form', $post->ID); ?>
 		</form>
 
-	<?php endif; // If registration required and not logged in ?>
+	<?php endif; ?>
 
-<?php else : // Comments are closed ?>
-	<p><?php _e('Sorry, the comment form is closed at this time.'); ?></p>
+<?php else :?>
+	<p><?php _e('Sorry! Este post não aceita comentários.'); ?></p>
 <?php endif; ?>

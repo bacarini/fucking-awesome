@@ -20,6 +20,7 @@ footer {
 }
 a{
   text-decoration:none;
+  color: #703f5a;
 }
 article{
   text-align: left;
@@ -76,14 +77,15 @@ div#links a{
   float: left;
   background: url('images/old_posts.png') no-repeat;
 }
-
-.postWrapper{ margin-left: 75px;}
+.postWrapper{ 
+  margin-left: 75px;
+}
 ol{
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
-
+ul{
+  list-style: none;
+}
 li.postWrapper,
 div.postWrapper { }
 
@@ -247,9 +249,6 @@ hr{
 .titleMeta a{
   color: #f4a481;
 }
-.descMeta a{
-  color: #703f5a;
-}
 .post_date{
   background: url("images/post_date.png") no-repeat;
   height: 65px;
@@ -330,4 +329,75 @@ form#commentform p input[type='text']{
 }
 .comment{
   overflow: hidden;
+}
+.ops{
+  font-family: 'halohandletterregular';
+  font-size: 350%;
+  color: #00595a;
+  margin-bottom: 17px;
+}
+.not_found{
+  color: #00595a; 
+  font-family: 'daxcompact-extraboldextrabold';
+}
+label.screen-reader-text {
+  display: none;
+}
+.widget-title{
+  color: #00595a; 
+  font-family: 'daxcompact-boldbold'; 
+}
+aside hr{
+  margin-bottom: 5px; 
+}
+form#search-form input[type='search']{
+ border: 0px ;
+ background: none;
+ line-height: 30px;
+ width: 180px;
+}
+form#search-form input[type='submit']{
+  background: url("images/lupa-buscar.png") no-repeat bottom;
+  width: 25px;
+  height: 20px;
+  border: 0;
+  vertical-align: text-top;
+}
+::-webkit-input-placeholder {   color: #00595a; 
+  font-family: 'daxcompact-boldbold';
+  font-size: 20px; 
+}
+::-moz-placeholder {   
+  color: #00595a; 
+  font-family: 'daxcompact-boldbold'; 
+  font-size: 20px;   
+  } /* firefox 19+ */
+:-ms-input-placeholder {   
+  color: #00595a; 
+  font-family: 'daxcompact-boldbold'; 
+  font-size: 20px;
+  } /* ie */
+input:-moz-placeholder {   
+  color: #00595a; 
+  font-family: 'daxcompact-boldbold';
+  font-size: 20px; 
+}
+.twitter{
+  background: url("images/twitter.png") no-repeat;
+  float: left;
+  width: 65px;
+  height: 79px; 
+  margin-top: -8px;
+}
+.facebook{
+  background: url("images/facebook.png") no-repeat; 
+  float: left; 
+  width: 65px;
+  height: 79px; 
+}
+.feed{
+  background: url("images/feed.png") no-repeat; 
+  float: left;
+    width: 65px;
+  height: 79px;  
 }

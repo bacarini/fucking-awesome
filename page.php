@@ -18,7 +18,8 @@
 
   <?php endwhile; else: ?>
 
-  <p>Sorry, no pages matched your criteria.</p>
+  <p class="ops">Ops!</p>
+  <p class="not_found">Nenhum post encontrado.</p>
 
 <?php endif; ?>
 

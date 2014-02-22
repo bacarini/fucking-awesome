@@ -56,7 +56,8 @@
 
   <?php else: ?>
 
-		<p>Sorry, no posts matched your criteria.</p>
+  <p class="ops">Ops!</p>
+  <p class="not_found">Nenhum post encontrado.</p>
 
   <?php endif;?>
 
