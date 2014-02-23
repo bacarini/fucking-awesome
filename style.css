@@ -5,8 +5,9 @@
    padding:0;
 }
 body {
-   background: url('images/bg-site.png');
-   font-family: "century gothic",verdana,arial,helvetica,sans-serif;
+  background: url('images/bg-site.png');
+  font-family: 'gothic';
+  font-size: 13px;
 }
 header{
   height: 196px;
@@ -37,6 +38,13 @@ aside {
 aside h3 {
   padding: 0;
   margin: 10px 0 0 0;
+}
+div address{
+  display: inline-block;
+  margin-top: 20px;
+}
+.wp-biographia-widget{
+  font-size: 12px !important;
 }
 .container{
   margin: 0 auto;
@@ -89,10 +97,12 @@ ul{
 li.postWrapper,
 div.postWrapper { }
 
-.postWrapper img { }
+.postWrapper img { 
+  max-width: 600px;
+}
 
 div.post {
-  margin-top: 25px;
+  margin-top: 12px;
 }
 
 p.postMeta { }
@@ -210,7 +220,7 @@ p.postMeta { }
   background: #e8e0c8;
 }
 .postTitle{
-  padding-bottom: 18px;
+  padding-bottom: 14px;
 }
 .postTitle a{
   font-family: 'halohandletterregular';
@@ -243,6 +253,7 @@ hr{
 }
 .titleMeta{
   color: #f4a481;
+  width: 93px;
 }
 .author{
   color: #f4a481;}
@@ -284,10 +295,11 @@ hr{
 }
 .comment_text{
   width: 561px;
-  border: 2px solid #00595a;
-  background-color: #f0eade;
-  min-height: 146px;
+  border: 2px solid #eae2cc;
+  background-color: #fff;
+  /*min-height: 146px;*/
   margin: 0 0 10px 96px;
+  color: #00595a;
 }
 #submit{
   font-family: 'halohandletterregular';
@@ -346,6 +358,7 @@ label.screen-reader-text {
 .widget-title{
   color: #00595a; 
   font-family: 'daxcompact-boldbold'; 
+  margin-top: 25px;
 }
 aside hr{
   margin-bottom: 5px; 
@@ -385,19 +398,37 @@ input:-moz-placeholder {
 .twitter{
   background: url("images/twitter.png") no-repeat;
   float: left;
-  width: 65px;
+  width: 85px;
   height: 79px; 
   margin-top: -8px;
 }
 .facebook{
   background: url("images/facebook.png") no-repeat; 
   float: left; 
-  width: 65px;
+  width: 85px;
   height: 79px; 
 }
 .feed{
   background: url("images/feed.png") no-repeat; 
   float: left;
-    width: 65px;
+    width: 85px;
   height: 79px;  
+}
+/* contact form */
+.contact{
+  margin-top: 25px;
+}
+.wpcf7-validation-errors{
+  display: none;
+}
+.wpcf7-submit{
+  font-family: 'halohandletterregular';
+  font-size: 300%;
+  border: 0;
+  background: none;
+  color: #00595a;
+  margin-left: 245px;
+  width: 100px;
+  background: url("images/menu-selected.png") no-repeat center bottom;
+  line-height: 0.7em;
 }

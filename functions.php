@@ -6,8 +6,8 @@
       'name' => __( '#Cool sidebar' ),
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget' => '</section>',
-      'before_title' => '<h3 class="widget-title">',
-      'after_title' => '<hr/></h3>'
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '<hr/></h2>'
     )
   );
 function html5_search_form( $form ) { 
