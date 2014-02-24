@@ -15,10 +15,7 @@
   <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
 
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  <?php
-    wp_get_archives('type=monthly&format=link');
-    wp_head();
-  ?>
+  <?php wp_head(); ?>
 </head>
 
 <body>
