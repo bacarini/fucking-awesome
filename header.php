@@ -3,8 +3,19 @@
 
 <head>
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+  <?php
+  if(is_single() || is_page() || is_category() || is_home()) {
+          echo '<meta name="robots" content="all,noodp" />';
+  }
+  else if(is_archive()) {
+          echo '<meta name="robots" content="noarchive,noodp" />';
+  }
+  else if(is_search() || is_404()) {
+          echo '<meta name="robots" content="noindex,noarchive" />';
+  }
+  ?>
 
-  <title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
+  <title><?php wp_title('', true, ‘right’); ?><?php bloginfo(‘name’); ?></title>
 
   <style type="text/css" media="screen">
     @import url( <?php bloginfo('stylesheet_url'); ?> );
@@ -16,6 +27,7 @@
 
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php wp_head(); ?>
+
 </head>
 
 <body>

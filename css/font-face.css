@@ -138,15 +138,14 @@
 }
 
 @font-face {
-    font-family: 'halohandletterregular';
-    src: url('/wp-content/themes/fucking-awesome/fonts/halohandletter-webfont.eot');
-    src: url('/wp-content/themes/fucking-awesome/fonts/halohandletter-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/wp-content/themes/fucking-awesome/fonts/halohandletter-webfont.woff') format('woff'),
-         url('/wp-content/themes/fucking-awesome/fonts/halohandletter-webfont.ttf') format('truetype'),
-         url('/wp-content/themes/fucking-awesome/fonts/halohandletter-webfont.svg#halohandletterregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+  font-family:"halohandletterregular";
+  src:url("/wp-content/themes/fucking-awesome/fonts/HaloHandletter.eot?") format("eot"),
+      url("/wp-content/themes/fucking-awesome/fonts/HaloHandletter.woff") format("woff"),
+      url("/wp-content/themes/fucking-awesome/fonts/HaloHandletter.ttf") format("truetype"),
+      url("/wp-content/themes/fucking-awesome/fonts/HaloHandletter.svg#HaloHandletter") format("svg");
+    font-weight:normal;font-style:normal;
+  }
+
 @font-face {
     font-family: 'gothic';
     src: url('/wp-content/themes/fucking-awesome/fonts/century-gothic.ttf') format('truetype');
