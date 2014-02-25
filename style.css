@@ -310,27 +310,41 @@ hr{
   margin-left: 280px;
   width: 100px;
   background: url("images/menu-selected.png") no-repeat center bottom;
-  line-height: 0.7em;
+  line-height: 37px;
 }
 #submit:hover{
   color: #d8471d;
-}
-form#commentform label small{
-  color: #f4a481;
 }
 form#commentform textarea{
   border: 2px solid #00595a;
   background-color: #f0eade;
   height: 120px;
-  width: 320px;
+  width: 330px;
   margin-top: 22px;
-  float: left;
+  padding: 10px;
+  display:block;
 }
-form#commentform p input[type='text']{
+form#commentform label{
+  display: inline-block;
+  position: relative;
+  padding-bottom: 12px;
+}
+form#commentform label span.label{
+  display: block;
+  color: #f4a481;
+}
+form#commentform input[type='text'],
+form#commentform input[type='email'],
+form#commentform input[type='url']{
   border: 2px solid #00595a;
   background-color: #f0eade;
   height: 23px;
   width: 280px;
+}
+.form-comment-area{
+  float: left;
+  position: relative;
+  padding-bottom: 13px;
 }
 #postcomment{
   font-family: 'daxcompact-extraboldextrabold';
@@ -338,6 +352,8 @@ form#commentform p input[type='text']{
 }
 .field_comment{
   float: right;
+  width: 284px;
+  margin-left: 20px;
 }
 .comment{
   overflow: hidden;
@@ -431,4 +447,14 @@ input:-moz-placeholder {
   width: 100px;
   background: url("images/menu-selected.png") no-repeat center bottom;
   line-height: 0.7em;
+}
+div.error{
+  color: #FF0000;
+  font-size: 11px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+input.error, textarea.error {
+  border: 2px solid red !important;
 }

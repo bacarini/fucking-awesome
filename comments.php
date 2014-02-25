@@ -39,14 +39,22 @@
 
 				<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="1"></textarea>
 			<?php else : ?>
-				<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="1"></textarea>
+        <div class="form-comment-area">
+				  <textarea name="comment" id="comment" cols="100" class="" required rows="10" tabindex="1"></textarea>
+        </div>
 				<div class="field_comment">
-				<p><label for="author"><small>*Nome:</small></label></p>
-				<p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" tabindex="2" /></p>
-				<p><label for="email"><small>*E-mail:</small></label></p>
-				<p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" tabindex="3" /></p>
-				<p><label for="url"><small>Website:</small></label></p>
-				<p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="4" /></p>
+          <label>
+            <span class="label">Nome</span>
+            <input type="text" name="author" id="author" required value="<?php echo $comment_author; ?>" tabindex="2" />
+          </label>
+          <label>
+            <span class="label">*E-mail:</span>
+            <input type="email" name="email" id="email" required class="email" value="<?php echo $comment_author_email; ?>" tabindex="3" />
+          </label>
+          <label>
+            <span class="label">Website:</span>
+            <input type="url" name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="4" />
+          </label>
 				</div>
 			<?php endif; ?>
 
