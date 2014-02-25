@@ -37,7 +37,9 @@
 
 				<p><?php printf(__('Logado como %s.'), '<a href="'.get_option('siteurl').'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account') ?>"><?php _e('Sair'); ?></a></p>
 
-				<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="1"></textarea>
+        <div class="form-comment-area">
+          <textarea name="comment" id="comment" cols="100" class="" required rows="10" tabindex="1"></textarea>
+        </div>
 			<?php else : ?>
         <div class="form-comment-area">
 				  <textarea name="comment" id="comment" cols="100" class="" required rows="10" tabindex="1"></textarea>
