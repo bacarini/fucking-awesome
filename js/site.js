@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
   jQuery.extend(jQuery.validator.messages, {
-      required: "Este campo &eacute; requerido.",
+      required: "Ops, esse campo &eacute; obrigat&oacute;rio!",
       remote: "Por favor, corrija este campo.",
       email: "Por favor, forne&ccedil;a um endere&ccedil;o eletr&ocirc;nico v&aacute;lido.",
       url: "Por favor, forne&ccedil;a uma URL v&aacute;lida.",
@@ -29,3 +29,12 @@ jQuery(document).ready(function($) {
     errorElement: "div"
   });
 });
+jQuery.browser = {};
+(function () {
+    jQuery.browser.msie = false;
+    jQuery.browser.version = 0;
+    if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+        jQuery.browser.msie = true;
+        jQuery.browser.version = RegExp.$1;
+    }
+})();

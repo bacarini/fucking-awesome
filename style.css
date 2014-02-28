@@ -1,5 +1,37 @@
-@import url("css/font-face.css");
-
+@font-face {
+    font-family: 'daxcompact-boldbold';
+    src: url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcomp1-webfont.eot');
+    src: url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcomp1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcomp1-webfont.woff') format('woff'),
+         url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcomp1-webfont.ttf') format('truetype'),
+         url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcomp1-webfont.svg#daxcompact-boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'daxcompact-lightlight';
+    src: url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcompl-webfont.eot');
+    src: url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcompl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcompl-webfont.woff') format('woff'),
+         url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcompl-webfont.ttf') format('truetype'),
+         url('/wordpress/wp-content/themes/fucking-awesome/fonts/daxcompl-webfont.svg#daxcompact-lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family:"halohandletterregular";
+  src:url('/wordpress/wp-content/themes/fucking-awesome/fonts/HaloHandletter.eot?') format("eot"),
+      url('/wordpress/wp-content/themes/fucking-awesome/fonts/HaloHandletter.woff') format("woff"),
+      url('/wordpress/wp-content/themes/fucking-awesome/fonts/HaloHandletter.ttf') format("truetype"),
+      url('/wordpress/wp-content/themes/fucking-awesome/fonts/HaloHandletter.svg#HaloHandletter') format("svg");
+    font-weight:normal;font-style:normal;
+}
+@font-face {
+    font-family: 'gothic';
+    src: url('/wordpress/wp-content/themes/fucking-awesome/fonts/century-gothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
    margin:0;
    padding:0;
@@ -69,6 +101,7 @@ div address{
 }
 #links{
   width: 661px;
+  display: inline-block;
 }
 #new_posts{
   background: url('images/new_posts.png') no-repeat right center;
@@ -88,48 +121,15 @@ div#links a{
 .postWrapper{
   margin-left: 75px;
 }
-ol{
+ol,ul{
   list-style: none;
 }
-ul{
-  list-style: none;
-}
-li.postWrapper,
-div.postWrapper { }
-
 .postWrapper img {
   max-width: 600px;
+  padding: 15px 0;
 }
-
 div.post {
-  margin-top: 12px;
-}
-
-p.postMeta { }
-
-#pagination {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-#pagination li {
-  display: inlne;
-}
-#pagination .previous {
-  text-align: left;
-  float: left;
-}
-#pagination .future {
-  text-align: right;
-  float: right;
-}
-#secondaryContent > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#secondaryContent > ul > li {
-  margin: 0 0 10px 0;
+  margin: 12px 0;
 }
 .widget_tag_cloud a {
   padding-left: 5px;
@@ -255,8 +255,7 @@ hr{
   color: #f4a481;
   width: 93px;
 }
-.author{
-  color: #f4a481;}
+.author,
 .titleMeta a{
   color: #f4a481;
 }
@@ -273,11 +272,9 @@ hr{
   font-family: 'daxcompact-lightlight';
   color: #dccda7;
   display: block;
-  /*padding-left: 21px;*/
 }
 .month{
   font-family: 'daxcompact-lightlight';
-  /*padding-left: 18px;*/
   text-transform: uppercase;
   color: #00595a;
 }
@@ -301,13 +298,14 @@ hr{
   margin: 0 0 10px 96px;
   color: #00595a;
 }
+.wpcf7-submit,
 #submit{
   font-family: 'halohandletterregular';
   font-size: 300%;
   border: 0;
   background: none;
   color: #00595a;
-  margin-left: 280px;
+  float: right;
   width: 100px;
   background: url("images/menu-selected.png") no-repeat center bottom;
   line-height: 37px;
@@ -323,6 +321,7 @@ form#commentform textarea{
   margin-top: 22px;
   padding: 10px;
   display:block;
+  font-family: 'gothic';
 }
 form#commentform label{
   display: inline-block;
@@ -340,6 +339,7 @@ form#commentform input[type='url']{
   background-color: #f0eade;
   height: 23px;
   width: 280px;
+  font-family: 'gothic';
 }
 .form-comment-area{
   float: left;
@@ -384,6 +384,9 @@ form#search-form input[type='search']{
  background: none;
  line-height: 30px;
  width: 180px;
+ color: #00595a;
+ font-family: 'daxcompact-boldbold';
+ font-size: 22px;
 }
 form#search-form input[type='submit']{
   background: url("images/lupa-buscar.png") no-repeat bottom;
@@ -392,21 +395,10 @@ form#search-form input[type='submit']{
   border: 0;
   vertical-align: text-top;
 }
-::-webkit-input-placeholder {   color: #00595a;
-  font-family: 'daxcompact-boldbold';
-  font-size: 20px;
-}
-::-moz-placeholder {
-  color: #00595a;
-  font-family: 'daxcompact-boldbold';
-  font-size: 20px;
-  } /* firefox 19+ */
-:-ms-input-placeholder {
-  color: #00595a;
-  font-family: 'daxcompact-boldbold';
-  font-size: 20px;
-  } /* ie */
-input:-moz-placeholder {
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+input:-moz-placeholder{
   color: #00595a;
   font-family: 'daxcompact-boldbold';
   font-size: 20px;
@@ -437,17 +429,6 @@ input:-moz-placeholder {
 .wpcf7-validation-errors{
   display: none;
 }
-.wpcf7-submit{
-  font-family: 'halohandletterregular';
-  font-size: 300%;
-  border: 0;
-  background: none;
-  color: #00595a;
-  margin-left: 245px;
-  width: 100px;
-  background: url("images/menu-selected.png") no-repeat center bottom;
-  line-height: 0.7em;
-}
 div.error{
   color: #FF0000;
   font-size: 11px;
@@ -457,4 +438,7 @@ div.error{
 }
 input.error, textarea.error {
   border: 2px solid red !important;
+}
+.cloud-tag{
+  text-align: center;
 }

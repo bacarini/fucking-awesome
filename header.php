@@ -33,7 +33,7 @@
 <body>
 
       <header class="container">
-        <h1 id="logo"></h1>
+        <a href="http://www.hashtagcool.com.br"><h1 id="logo"></h1></a>
         <nav id="access" role="navigation">
           <?php wp_nav_menu( array('menu' => 'Quem faz' )); ?>
         </nav>
