@@ -138,6 +138,9 @@ ol,ul{
   max-width: 600px;
   padding-top: 15px;
 }
+div.post a{
+  color: #00595A;
+}
 div.post {
   margin: 12px 0;
 }
@@ -231,7 +234,7 @@ div.post {
 }
 .postTitle{
   padding-bottom: 14px;
-  word-spacing: 12px;
+  word-spacing: 8px;
 }
 .postTitle a{
   font-family: 'halohandletterregular';
