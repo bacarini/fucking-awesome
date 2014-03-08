@@ -29,9 +29,9 @@
         <small>
           <p>
             <span class="titleMeta">Categoria:</span>
-            <span class="descMeta"><?php the_category(", "); ?></span>
+            <span class="descMeta"><?php the_category(', '); ?></span>
             <span class="titleMeta">Tags:</span>
-            <span class="descMeta"><?php the_tags(", "); ?></span>
+            <span class="descMeta"><?php the_tags(__(''), ', '); ?></span>
           </p>
           <p>
             <span class="titleMeta">

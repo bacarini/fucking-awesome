@@ -7,25 +7,18 @@
 <?php if ( $comments ) : ?>
 	<ol id="commentlist">
 
-		<?php foreach ($comments as $comment) : ?>
-			<li class="comment">
-        <div class="comment_image">
-          <?php echo get_avatar( $comment, 76 ); ?>
-          <small>
-          <p class="titleMeta"><?php comment_author_link() ?></p>
-          <p><?php echo get_comment_date('j.m.Y') ?> </p>
-          <p>at <?php echo strtoupper(get_comment_time()) ?></p>
-          <?php edit_comment_link(__("Edit")); ?>
-        </small>
-        </div>
-        <div class="comment_text"><?php comment_text() ?></div>
-      </li>
-      <hr/>
-		<?php endforeach; ?>
+<ul class="commentlist">
+<?php wp_list_comments(array(
+	'style' 			=> 'li', 
+	'callback' 			=> 'comments_start',
+	'reply_text'        => 'Responder',
+	'format'            => 'html5')); ?>
+</ul>
+
 	</ol>
 <?php endif; ?>
-
 <?php if ( comments_open() ) : ?>
+	<hr />
 	<h2 id="postcomment">Comente:</h2>
 
 	<?php if ( get_option('comment_registration') && !$user_ID ) : ?>

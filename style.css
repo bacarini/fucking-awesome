@@ -136,7 +136,7 @@ ol,ul{
 }
 .postWrapper img {
   max-width: 600px;
-  padding: 15px 0;
+  padding-top: 15px;
 }
 div.post {
   margin: 12px 0;
@@ -231,6 +231,7 @@ div.post {
 }
 .postTitle{
   padding-bottom: 14px;
+  word-spacing: 12px;
 }
 .postTitle a{
   font-family: 'halohandletterregular';
@@ -300,19 +301,35 @@ hr{
 .comment_image{
   float: left;
 }
+ul.children{
+  display: inline-block;
+}
+ul.children .comment_text{
+  width: 467px;
+  border: 2px solid #eae2cc;
+  background-color: #fff;
+  margin: 0 0 10px 96px;
+  color: #00595a;  
+}
 .comment_text{
   width: 561px;
   border: 2px solid #eae2cc;
   background-color: #fff;
-  /*min-height: 146px;*/
   margin: 0 0 10px 96px;
   color: #00595a;
 }
+.reply{
+  display: none;
+  font-size: 230%;
+  margin-bottom: 20px;
+  font-family: 'halohandletterregular';
+  float: right;
+}
 .wpcf7-submit,
 #submit{
-  font-family: 'halohandletterregular';
   font-size: 300%;
   border: 0;
+  font-family: 'halohandletterregular';
   background: none;
   color: #00595a;
   float: right;
@@ -436,6 +453,7 @@ input:-moz-placeholder{
 .contact{
   margin-top: 25px;
 }
+.comment-subscription-form,
 .wpcf7-validation-errors{
   display: none;
 }
@@ -451,4 +469,21 @@ input.error, textarea.error {
 }
 .cloud-tag{
   text-align: center;
+}
+.sharedaddy{
+  margin-top: 15px;
+}
+div.sharedaddy .sd-content {
+  float: none !important;
+}
+img.aligncenter,
+div.aligncenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p.wp-caption-text{
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
 }

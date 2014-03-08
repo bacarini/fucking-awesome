@@ -29,4 +29,44 @@
   }
 
   add_action('wp_enqueue_scripts', 'my_js');
+
+  function comments_start($comment, $args, $depth) {
+    $GLOBALS['comment'] = $comment;
+    extract($args, EXTR_SKIP); ?>
+
+    <li <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
+    <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+        <div class="comment-author vcard comment_image">
+            <?php echo get_avatar( $comment, 76 ); ?>
+            <small>
+                <p class="titleMeta"><?php comment_author_link() ?></p>
+                <p><?php echo get_comment_date('j.m.Y') ?> </p>
+                <p>at <?php echo strtoupper(get_comment_time()) ?></p>
+                <?php edit_comment_link(__("Edit")); ?>
+            </small>
+        </div>
+        <?php if ($comment->comment_approved == '0') : ?>
+            <em class="comment-awaiting-moderation"><?php _e('Obrigado. Seu comentário passará por moderação e em breve será postado.') ?></em>
+            <br />
+        <?php endif; ?>
+
+        <div class="comment_text"><?php comment_text() ?></div>
+
+        <div class="reply">
+          <?php comment_reply_link(array_merge( $args, array('add_below' => 'div-comment', 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+        </div>
+    </div>
+<?php
+  }
+  // Removes Trackbacks from the comment cout
+  add_filter('get_comments_number', 'comment_count', 0);
+  function comment_count( $count ) {
+    if ( ! is_admin() ) {
+      global $id;
+      $comments_by_type = &separate_comments(get_comments('status=approve&post_id=' . $id));
+      return count($comments_by_type['comment']);
+    } else {
+      return $count;
+    }
+  }
 ?>
