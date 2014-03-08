@@ -301,10 +301,10 @@ hr{
 .comment_image{
   float: left;
 }
-ul.children{
+article ul.children{
   display: inline-block;
 }
-ul.children .comment_text{
+article ul.children .comment_text{
   width: 467px;
   border: 2px solid #eae2cc;
   background-color: #fff;
@@ -486,4 +486,7 @@ p.wp-caption-text{
   text-align: center;
   font-style: italic;
   font-size: 12px;
+}
+li.cat-item ul.children{
+  margin-left: 15px;
 }
