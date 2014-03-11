@@ -190,7 +190,7 @@ div.post {
   display: none;
   float: left;
   position: absolute;
-  top: 16px;
+  top: 8px;
   left: 0;
   margin-left: -25px;
   z-index: 99998;
@@ -312,7 +312,7 @@ article ul.children .comment_text{
   border: 2px solid #eae2cc;
   background-color: #fff;
   margin: 0 0 10px 96px;
-  color: #00595a;  
+  color: #00595a;
 }
 .comment_text{
   width: 561px;
