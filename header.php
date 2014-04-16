@@ -31,7 +31,7 @@
 </head>
 
 <body>
-
+      <?php include_once("analyticstracking.php") ?>
       <header class="container">
         <a href="http://www.hashtagcool.com.br"><h1 id="logo"></h1></a>
         <nav id="access" role="navigation">
