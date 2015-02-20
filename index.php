@@ -53,8 +53,8 @@
     <?php endwhile; ?>
 
     <div id="links" class="container">
-        <div id="old_posts"><?php next_posts_link('Posts + velhos','') ?></div>
-        <div id="new_posts"><?php previous_posts_link('Posts + novos') ?></div>
+        <div id="old_posts"><?php next_posts_link('Post anterior','') ?></div>
+        <div id="new_posts"><?php previous_posts_link('Post seguinte') ?></div>
     </div>
 
   </ol>

@@ -50,8 +50,8 @@
     <?php endwhile;?>
 
     <div id="links" class="container">
-      <span id="old_posts"><?php previous_post_link( '%link', __( 'Post + velhos') ); ?></span>
-      <span id="new_posts"><?php next_post_link( '%link', __( 'Post + novos') ); ?></span>
+      <span id="old_posts"><?php previous_post_link( '%link', __( 'Post anterior') ); ?></span>
+      <span id="new_posts"><?php next_post_link( '%link', __( 'Post seguinte') ); ?></span>
     </div>
 
   <?php else: ?>
