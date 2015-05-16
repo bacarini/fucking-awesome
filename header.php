@@ -18,7 +18,7 @@
   <title><?php wp_title('', true, ‘right’); ?><?php bloginfo(‘name’); ?></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1, user-scalable=false">
-  <link rel="stylesheet" type="text/css" href="http://hashtagcool.com.br/wp-content/themes/fucking-awesome/style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://hashtagcool.com.br/wp-content/themes/fucking-awesome/style.css">
 
   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
