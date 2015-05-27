@@ -90,7 +90,7 @@ div address{
 }
 .container{
   margin: 0 auto;
-  max-width: 998px;
+  width: 998px;
 }
 #logo{
   background: url("images/logo.png") no-repeat;
