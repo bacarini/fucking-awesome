@@ -44,7 +44,7 @@
             <?php edit_post_link(__('Edit'), ' | ');?>
           </p>
         </small>
-
+        <?php wp_related_posts()?>
         <hr/>
       </li>
 
